@@ -1,10 +1,9 @@
-/* ──────────────────────────────────╮ 
- * Swaync notification configuration │
- * ──────────────────────────────────╯
- * @jvdcf
- * Based on ErikReider config (https://github.com/ErikReider/Linux/blob/master/dotfiles/swayConfig/swaync/config.json)
- */
 {
+  "_title": "Swaync notification configuration",
+  "_author": "@jvdcf",
+  "_credits": "Based on ErikReider config (https://github.com/ErikReider/Linux/blob/master/dotfiles/swayConfig/swaync/config.json)",
+
+
   "$schema": "/etc/xdg/swaync/configSchema.json",
 
   "positionX": "left",
