@@ -17,25 +17,34 @@
       "left": 0
     }
   },
+  "display": {
+    "separator": "  ",
+    "key": {
+      "type": "icon",
+      "paddingLeft": 0
+    },
+    "color": "white"
+  },
   "modules": [
     {
       "type": "title",
-      "format": "{6} in {5}"
+      "format": "{6} @ {2}"
     },
     {
-      "type": "separator"
+      "type": "separator",
+      "length": 40
     },
     {
       "type": "battery",
-      "format": "  {4} {10}"
+      "format": "{4} {10} {5}"
     },
     {
       "type": "memory",
-      "format": "   {3} {4} ({1})"
+      "format": "{3} {4} {1}"
     },
     {
       "type": "disk",
-      "format": " {3} {13} ({1})"
+      "format": "{3} {13} {1}"
     }
   ] 
 }
