@@ -3,8 +3,9 @@
  * ─────────────────────╯
  * @jvdcf
  */
-{
-    "layer": "top",     
+[{
+    "layer": "top",
+    "output": "eDP-1",
     "position": "left", 
     "width": 75,
     "fixed-center": false,
@@ -80,9 +81,10 @@
      },
 
     "tray": {
-        "icon-size": 22,
-        "spacing": 7,
-        "reverse-direction": true
+        "icon-size": 18,
+        "spacing": 0,
+        "reverse-direction": true,
+        "show-passive-items": true
     },
 
     "clock": {
@@ -175,5 +177,52 @@
         "tooltip-format-wifi": "Wi-Fi:\n{essid}",
         "tooltip-format-disconnected": "Disconnected from the network"
     }
+}, {
+    "layer": "top",
+    "output": "HDMI-A-1",
+    "position": "left", 
+    "width": 75,
+    "fixed-center": false,
+
+    "modules-left": ["clock", "hyprland/workspaces"],
+    "modules-center": [],
+    "modules-right": ["custom/music", "custom/pacman"],
+    
+    "hyprland/workspaces": {
+         "disable-scroll": true,
+         "sort-by-name": true,
+         "format": "{icon}",
+         "format-icons": {
+             "default": ""
+         }
+     },
+
+    "clock": {
+        "timezone": "Europe/Lisbon",
+        "tooltip-format": "<big>{:%d/%m/%Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d\n%b}",
+        "format": "{:%H\n%M}"
+    },
+
+    "custom/music": {
+        "format": "",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --format='{{ title }}'",
+        "on-click": "playerctl play-pause",
+        "max-length": 50
+    },
+
+    "custom/pacman": {
+        "format": "{}\n",
+        "interval": 3600,                     // every hour
+        "exec": "checkupdates | wc -l",       // # of updates
+        "exec-if": "exit 0",                  // always run; consider advanced run conditions
+        "on-click": "kitty -e yay -Syyu", // update system
+        "signal": 8
+    }
+
 }
+],
 

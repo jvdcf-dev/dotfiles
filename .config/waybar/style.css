@@ -22,12 +22,18 @@
 #system,
 #hardware,
 #tray,
-#custom-notification {
+#custom-notification,
+#custom-music,
+#custom-pacman {
   background-color: alpha(@base,0.95);
   padding: 10px;
   margin: 10px 0px 10px 10px;
   border-radius: 10px;
   color: @text;
+}
+
+#tray * {
+  padding: 10px;
 }
 
 #clock {
