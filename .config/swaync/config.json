@@ -34,32 +34,69 @@
   "script-fail-notify": true,
 
   "widgets": [
-    "inhibitors",
-    "dnd",
-    "mpris",
-    "notifications"
+    "buttons-grid",
+    "volume",
+    "backlight",
+    "mpris"
   ],
   "widget-config": {
-    "inhibitors": {
-      "text": "Inhibitors",
-      "button-text": "Clear All",
-      "clear-all-button": true
-    },
     "title": {
-      "text": "Notifications",
-      "clear-all-button": false,
-      "button-text": "Clear All"
+      "text": "Notification Center",
+      "clear-all-button": true,
+      "button-text": "Clear 󰆴"
     },
     "dnd": {
       "text": "Do Not Disturb"
     },
     "label": {
-      "max-lines": 5,
-      "text": "Label Text"
+      "max-lines": 1,
+      "text": "Notification Center"
     },
     "mpris": {
-      "image-size": 96,
-      "blur": false
+      "image-size": 50,
+      "image-radius": 5
+    },
+    "volume": {
+      "label": "󰕾"
+    },
+    "backlight": {
+      "label": "󰃟"
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "󰍃",
+          "command": "wlogout"
+        },
+        {
+          "label": "",
+          "command": "wofi --show drun"
+        },
+        {
+          "label": "󰑓",
+          "command": "kitty -e yay -Syyu"
+        },
+        {
+          "label": "",
+          "command": "kitty -e btop"
+        },
+        {
+          "label": "",
+          "command": "kitty"
+        },
+        {
+          "label": "󰈹",
+          "command": "firefox"
+        },
+        {
+          "label": "",
+          "command": "gtk-launch spotify"
+        },
+        {
+          "label": "",
+          "command": "gtk-launch webcord"
+        }
+      ]
     }
   }
 }
