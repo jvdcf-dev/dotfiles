@@ -15,13 +15,13 @@ stow .
 ```
 
 ## Applications
-- 💻 **Hyprland** Window Manager (using waybar, swaync, wlogout and wofi) 
+- 💻 **Hyprland** Window Manager (using waybar, swaync, wlogout and fuzzel) 
 - 🐱 **Kitty** Terminal 
 - 🐚 **Zsh** Shell (with zoxide, fastfetch and ohmyposh)
 - 📝 **Neovim** Text Editor
 
 ## Credits and special thanks
-- **The Catppuccin Team**: [Hyprlock](https://github.com/catppuccin/hyprlock), [Kitty](https://github.com/catppuccin/kitty), [Swaync](https://github.com/catppuccin/swaync), [Waybar](https://github.com/catppuccin/waybar)
+- **The Catppuccin Team**: [Hyprlock](https://github.com/catppuccin/hyprlock), [Kitty](https://github.com/catppuccin/kitty), [Swaync](https://github.com/catppuccin/swaync), [Waybar](https://github.com/catppuccin/waybar), [Fuzzel](https://github.com/catppuccin/fuzzel)
 
 - **Dreams of Autonomy**: [zshrc](https://www.youtube.com/watch?v=ud7YxC33Z3w), [Oh My Posh](https://www.youtube.com/watch?v=9U8LCjuQzdc)
 - [NvChad Team](https://nvchad.com/)
